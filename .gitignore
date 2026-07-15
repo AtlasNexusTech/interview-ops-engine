@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+
+# Runtime outputs
+out/
+output/
+data/
+private/
+local/
+
+# Candidate documents and private histories
+*.pdf
+*.doc
+*.docx
+*.odt
+*.rtf
+candidate.json
+profile.json
+applications.jsonl
+application-history*
+*-cv.*
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+keypair.json
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store

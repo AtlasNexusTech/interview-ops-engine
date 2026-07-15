@@ -1,0 +1,35 @@
+{
+  "target_titles": [
+    "customer success manager",
+    "account manager",
+    "business developer"
+  ],
+  "excluded_title_terms": [
+    "assistant",
+    "stage",
+    "alternance",
+    "growth manager"
+  ],
+  "evidence_tags": [
+    "b2b",
+    "portfolio",
+    "contracts",
+    "crm",
+    "english",
+    "automotive"
+  ],
+  "allowed_locations": [
+    "paris",
+    "ile-de-france",
+    "remote france"
+  ],
+  "allowed_contracts": [
+    "cdi",
+    "cdd"
+  ],
+  "known_languages": [
+    "french",
+    "english"
+  ],
+  "submission_score": 70
+}

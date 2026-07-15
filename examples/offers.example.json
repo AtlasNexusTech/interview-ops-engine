@@ -1,0 +1,41 @@
+[
+  {
+    "offer_id": "sample-001",
+    "title": "Customer Success Manager",
+    "company": "Sample Industries",
+    "url": "https://careers.sample.test/jobs/001",
+    "location": "Paris",
+    "contract": "CDI",
+    "required_evidence": ["b2b", "portfolio"],
+    "preferred_evidence": ["crm", "automotive"],
+    "required_languages": ["french", "english"],
+    "friction": [],
+    "active": true
+  },
+  {
+    "offer_id": "sample-002",
+    "title": "Account Manager",
+    "company": "Example Finance",
+    "url": "https://jobs.example.test/openings/002",
+    "location": "Paris",
+    "contract": "CDI",
+    "required_evidence": ["b2b", "saas"],
+    "preferred_evidence": ["contracts"],
+    "required_languages": ["french"],
+    "friction": [],
+    "active": true
+  },
+  {
+    "offer_id": "sample-003",
+    "title": "Assistant Account Manager",
+    "company": "Demo Services",
+    "url": "https://careers.demo.test/jobs/003",
+    "location": "Paris",
+    "contract": "CDD",
+    "required_evidence": ["b2b"],
+    "preferred_evidence": [],
+    "required_languages": ["french"],
+    "friction": ["otp"],
+    "active": true
+  }
+]

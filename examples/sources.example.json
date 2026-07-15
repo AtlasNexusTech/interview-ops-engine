@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {
+      "type": "greenhouse",
+      "company": "Fictional Greenhouse Company",
+      "identifier": "replace_with_greenhouse_board_token"
+    },
+    {
+      "type": "lever",
+      "company": "Fictional Lever Company",
+      "identifier": "replace_with_lever_site_name"
+    },
+    {
+      "type": "jsonld",
+      "company": "Fictional JSON-LD Company",
+      "url": "https://careers.example.test/jobs"
+    }
+  ]
+}

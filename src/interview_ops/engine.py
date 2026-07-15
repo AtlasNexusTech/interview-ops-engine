@@ -125,6 +125,15 @@ def evaluate_offer(profile: CandidateProfile, offer: Offer, history: list[Histor
     if missing or missing_languages or blockers or unknown_friction:
         return _base_result(offer, "review_required", score, reasons, matched, missing)
 
+    if not offer.qualification_complete:
+        reasons.append("collector did not verify requirements and application friction")
+    if not offer.application_url_verified:
+        reasons.append("application URL was not verified on the expected job-board domain")
+    if offer.source != "manual" and not offer.publication_date_known:
+        reasons.append("publication date is unknown for collected offer")
+    if reasons:
+        return _base_result(offer, "review_required", score, reasons, matched, missing)
+
     status = "submission_ready" if score >= profile.submission_score else "shortlisted"
     reasons.append("all hard requirements are verified")
     return _base_result(offer, status, score, reasons, matched, missing)

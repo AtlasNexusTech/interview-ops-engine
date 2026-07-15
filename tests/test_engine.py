@@ -113,6 +113,21 @@ def test_strong_verified_fit_is_submission_ready():
     assert result.missing_required_evidence == ()
 
 
+def test_unqualified_collected_offer_always_requires_review_but_legacy_offer_does_not():
+    collected = offer(
+        source="lever:example",
+        qualification_complete=False,
+        publication_date_known=True,
+    )
+
+    result = evaluate_offer(profile(), collected, [])
+
+    assert result.status == "review_required"
+    assert result.auto_submit is False
+    assert "collector did not verify requirements and application friction" in result.reasons
+    assert evaluate_offer(profile(), offer(), []).status == "submission_ready"
+
+
 def test_rank_offers_marks_duplicates_inside_the_same_batch():
     first = offer(offer_id="first", url="https://jobs.example.test/shared?utm_source=one")
     second = offer(offer_id="second", url="https://jobs.example.test/shared?utm_source=two")

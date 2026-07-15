@@ -27,6 +27,13 @@ class Offer:
     required_languages: tuple[str, ...] = ()
     friction: tuple[str, ...] = ()
     active: bool = True
+    published_at: str | None = None
+    publication_date_known: bool = False
+    description: str = ""
+    source: str = "manual"
+    qualification_complete: bool = True
+    application_url_verified: bool = True
+    valid_through: str | None = None
 
 
 @dataclass(frozen=True, slots=True)
